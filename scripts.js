@@ -1,37 +1,26 @@
+/**********************************************************************
+* AFTER EACH STEP WHERE YOU WRITE CODE, EITHER LOG THE RESULT TO THE
+CONSOLE USING CONSOLE.LOG(), OR CHECK THE VALUE IN THE CONSOLE BY
+TYPING IT IN AND PRESSING ENTER. MAKE SURE YOU HAVE THE VALUE YOU
+EXPECT! *
+**********************************************************************/
+
 /********************** Exercise 1 - Creating Objects **********************/
 
 let user1 = {
   name: "Rose Smith",
   age: 36,
-  languages: ['English', 'Spanish'],
-  programmer: true
-}
+  language: "English",
+  programmer: true,
+};
 
-// Add keys and values like those seen in the "rose" object to the "user2" object that represent you.
+// Create a variable called "user2" that points to a new object. That object should hve the same keys as "user1", but different values, representing you—that is, it should have your name, your age, etc. Use the "user1" object above as a reference.
 
-let user2 = { 
-  // your code here
-}
+// Log the variable's value in the console.
 
-console.log("Your object representation is:", user2);
+// Create a variable called "dino1" that points to a new object. It should have the keys "name", "species", and "diet". The values should be "T-Rex", "Tyrannosaurus Rex", and "carnivore", respectively.
 
-
-// Change the value of your "name" key in the "user2" object above to be an object with first, last, middle, etc. keys.
-// e.g. "Rose Smith" -> {first: "Rose", last: "Smith"}
-
-
-
-
-// Access your first, and last names with dot notation to complete the fullName variable. Log the fullName variable to the console.
-
-
-
-// Add three more key-value pairs to the "user2" object that are meaningful to you.
-
-
-
-
-/********************** Exercise 2 - Creating Objects **********************/
+// Log the variable's value in the console.
 
 // Create an object to hold information on your favorite recipe. It should have properties for:
 
@@ -39,170 +28,92 @@ console.log("Your object representation is:", user2);
 // Servings (a number)
 // Ingredients (an array of strings)
 
-
-
 // Log the object to the console.
 
+/********************** Exercise 2 - Accessing Values **********************/
 
+// Create a variable that holds the value of the "title" key in the "recipe" object you created above.
 
-/********************** Exercise 3 - Accessing Values  **********************/
-const car = {
-    color: "black",
-    model: "mustang",
-    year: 1990,
-    features: ["radio", "seat warmers", "power windows"] 
-  };
+// Log the value of that variable to the console.
 
+// Create a variable that holds the value of the "name" key in the "user1" object from the previous exercise.
 
-// Log the string "power windows" to the console.
+// Log the value of that variable to the console.
 
+// WITHOUT creating a new variable, log the value of the "name" key in the "user1" object to the console.
 
+// Log the value of the "age" key in the "user2" object to the console. You can create a new variable or log the value directly.
 
+let user3 = {
+  name: "Rose Smith",
+  age: 36,
+  language: ["English", "Spanish"],
+  programmer: true,
+};
 
-/********************** Exercise 4 - Accessing Values (Collections) **********************/
-var catsForAdoption = [
-    { name: "Angel", age: 18, furColor: "grey" },
-    { name: "Kerry", age: 14, furColor: "red" },
-    { name: "Gracey", age: 12, furColor: "white" }
-  ];
+// Log the value of the "language" key in the "user3" object to the console.
 
-// Log the string "Gracey is a 12 year old cat with white fur." to the console.
+// Put the value of the "language" key in the "user3" object into a new variable. Log the value of the first language in that array to the console using an index.
 
+// WITHOUT creating a new variable or accessing the one you just created, log the value of the first language in the "languages" array to the console. You'll have to use BOTH dot notation to access the "languages" array, and square bracket notation to access the first element in that array, all in the same line.
 
+/********************** Exercise 3 - Adding Values **********************/
 
-// Log the string "Gracey, Angel, and Kerry are ready to be adopted!" to the console.
+let dino2 = {};
 
+// ALL OF THE STEPS BELOW SHOULD BE DONE WITHOUT CHANGING THE CODE ABOVE.
 
+// Add a key-value pair to the above empty "dino2" object. The key should be "name", and the value should be "Raptor".
 
+// Add a key-value pair to the "dino2" object. The key should be "species", and the value should be "Velociraptor".
 
-/********************** Exercise 5 - Accessing Values (Nested Ojects) **********************/
-const person = {
-    name: "Alice",
-    address: {
-      city: "New York",
-      zipCode: "10001"
-    },
-    contact: {
-      email: "alice@example.com",
-      phone: "123-456-7890"
-    }
-  };
-  
-// Log Alice's city and email to the console.
+// Add a key-value pair to the "dino2" object. The key should be "diet", and the value should be "carnivore".
 
+// Log the "dino2" object to the console.
 
+let dino3 = {
+  name: "Raptor",
+  diet: "carnivore",
+};
 
-/********************** Exercise 6 - Accessing Values (Nested Objects) **********************/
+// ALL OF THE STEPS BELOW SHOULD BE DONE WITHOUT CHANGING THE CODE ABOVE.
 
-// The following data is a real response from the Weather API service.
-let weatherResponse = {
-    "lat":33.44,
-    "lon":-94.04,
-    "timezone":"America/Chicago",
-    "timezone_offset":-18000,
-    "current":{
-       "dt":1684929490,
-       "sunrise":1684926645,
-       "sunset":1684977332,
-       "temp":92.55,
-       "feels_like":92.87,
-       "pressure":1014,
-       "humidity":89,
-       "dew_point":290.69,
-       "uvi":0.16,
-       "clouds":53,
-       "visibility":10000,
-       "wind_speed":3.13,
-       "wind_deg":93,
-       "wind_gust":6.71,
-       "weather":[
-          {
-             "id":803,
-             "main":"Clouds",
-             "description":"broken clouds",
-             "icon":"04d"
-          }
-       ]
-    },
-    "hourly":[
-       {
-          "dt":1684926000,
-          "temp":292.01,
-          "feels_like":292.33,
-          "pressure":1014,
-          "humidity":91,
-          "dew_point":290.51,
-          "uvi":0,
-          "clouds":54,
-          "visibility":10000,
-          "wind_speed":2.58,
-          "wind_deg":86,
-          "wind_gust":5.88,
-          "weather":[
-             {
-                "id":803,
-                "main":"Clouds",
-                "description":"broken clouds",
-                "icon":"04n"
-             }
-          ],
-          "pop":0.15
-       },
-    ],
-    "daily":[
-       {
-          "dt":1684951200,
-          "sunrise":1684926645,
-          "sunset":1684977332,
-          "moonrise":1684941060,
-          "moonset":1684905480,
-          "moon_phase":0.16,
-          "summary":"Expect a day of partly cloudy with rain",
-          "temp":{
-             "day":299.03,
-             "min":290.69,
-             "max":300.35,
-             "night":291.45,
-             "eve":297.51,
-             "morn":292.55
-          },
-          "feels_like":{
-             "day":299.21,
-             "night":291.37,
-             "eve":297.86,
-             "morn":292.87
-          },
-          "pressure":1016,
-          "humidity":59,
-          "dew_point":290.48,
-          "wind_speed":3.98,
-          "wind_deg":76,
-          "wind_gust":8.92,
-          "weather":[
-             {
-                "id":500,
-                "main":"Rain",
-                "description":"light rain",
-                "icon":"10d"
-             }
-          ],
-          "clouds":92,
-          "pop":0.47,
-          "rain":0.15,
-          "uvi":9.23
-       },
-    ]
-   };
+// Add a key-value pair to the "dino3" object. The key should be "species", and the value should be "Velociraptor".
 
-// Add the values to the following variables
-               
-let currentTemperature;
-let currentVisibility;
-let hourlyWeatherDescription;
-let dailyMoonPhsse;
+// Now create a dino4 object with the name and species keys. The values should be "Triceratops" and "Triceratops Horridus", respectively.
 
+// Add a key-value pair to the "dino4" object. The key should be "diet", and the value should be "herbivore".
 
-/********************** Exercise 7 - Building Objects **********************/
-// Looking at the design_profile image in the assets folder, how would you build an object that reflect the data collected from the user?
+// Log the "dino4" object to the console.
 
-// Create the object here:
+/********************** Exercise 4 - Changing Values **********************/
+
+let dino5 = {
+  name: "Triceratops",
+  species: "Triceratops Horridus",
+  diet: "herbivore",
+};
+
+// ALL OF THE STEPS BELOW SHOULD BE DONE WITHOUT CHANGING THE CODE ABOVE.
+
+// Change the value of the "diet" key in the "dino5" object to "omnivore".
+
+// Log the "dino5" object to the console.
+
+// Change the value of the "name" key in the "dino5" object to "Sarah".
+
+// Log the "dino5" object to the console.
+
+let prettyGoodBook = {
+  title: "The Hobbit",
+  price: 14.99,
+  rating: 4.5,
+};
+
+// ALL OF THE STEPS BELOW SHOULD BE DONE WITHOUT CHANGING THE CODE ABOVE.
+
+// Change the value of the "price" key in the "prettyGoodBook" object to 12.99.
+
+// Change the value of the "rating" key in the "prettyGoodBook" object to 5. (It's more than just pretty good!)
+
+// Log the "prettyGoodBook" object to the console.
